@@ -171,7 +171,7 @@ func HashFile2(
 	}
 
 	// buffered channel for less waiting on scheduling.
-	work := make(chan *job, 2*nCPU)
+	work := make(chan *job, 1024)
 	var wg sync.WaitGroup
 	wg.Add(int(nWorkers))
 
