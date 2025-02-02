@@ -1,3 +1,26 @@
+About this fork
+---------
+This repo, https://github.com/glycerine/blake3 , is a fork of 
+lukechampine.com/blake3 (https://github.com/lukechampine/blake3) 
+that adds accelerated hashing using multiple parallel goroutines.
+
+The added function is called `HashFile()`. It is found
+in parallel.go. Tests are in parallel_test.go.
+
+If/when the same changes are applied upstream,
+in https://github.com/lukechampine/blake3/pull/24
+then this fork will no longer be necessary.
+
+Until then, users like myself who need this fuctionality
+can import this fork. It is used, for example, in my `b3`
+tool https://github.com/glycerine/b3 ; the Golang equivalent
+of the Rust b3sum command line provided by the Blake3
+project https://github.com/BLAKE3-team/BLAKE3 . You
+can use `b3 -hex -f` to verify they produce the same hashes.
+
+
+original README:
+
 blake3
 ------
 
