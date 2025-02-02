@@ -68,13 +68,13 @@ func HashFile(path string) (sum []byte, h *Hasher, err error) {
 //
 // Note that it isn't possible in general to
 // hash a second file quickly (in parallel) into the
-// returned hash due to alignment issues: Blake3
+// returned Hasher due to alignment issues: Blake3
 // is sensitive to the exact position of each
 // byte in the stream. Thus it isn't possible
 // to implement a method such as Hasher.HashFile() and
 // have it be parallel. Hence such an
 // API is not provided; HashFile returns a new
-// Hasher but cannot do a parallel write a file into
+// Hasher but cannot do a parallel write of a file into
 // an existing, already written-to, Hasher.
 //
 // What to do instead? We recommend doing a
