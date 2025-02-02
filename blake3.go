@@ -1,5 +1,5 @@
 // Package blake3 implements the BLAKE3 cryptographic hash function.
-package blake3 // import "lukechampine.com/blake3"
+package blake3
 
 import (
 	"encoding/binary"
@@ -9,8 +9,8 @@ import (
 	"math"
 	"math/bits"
 
-	"lukechampine.com/blake3/bao"
-	"lukechampine.com/blake3/guts"
+	"github.com/glycerine/blake3/bao"
+	"github.com/glycerine/blake3/guts"
 )
 
 // Hasher implements hash.Hash.

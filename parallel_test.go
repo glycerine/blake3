@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"lukechampine.com/blake3/guts"
+	"github.com/glycerine/blake3/guts"
 )
 
 func TestSmallMerge(t *testing.T) {
