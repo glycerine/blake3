@@ -4,7 +4,7 @@ This repo, https://github.com/glycerine/blake3 , is a fork of
 lukechampine.com/blake3 (https://github.com/lukechampine/blake3) 
 that adds accelerated hashing using multiple parallel goroutines.
 
-The added function is called `HashFile()`. It is found
+The added function is called`HashFile()` https://github.com/glycerine/blake3/blob/master/parallel.go#L40 . It is found
 in parallel.go. Tests are in parallel_test.go.
 
 If/when the same changes are applied upstream,
