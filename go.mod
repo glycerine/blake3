@@ -1,4 +1,4 @@
-module lukechampine.com/blake3
+module github.com/glycerine/blake3
 
 go 1.17
 
